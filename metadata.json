@@ -1,0 +1,6 @@
+{
+  "name": "SCALESTUDIO.MODELS — The Art of Diecast with Hamza Bilal",
+  "description": "A curated showcase of miniature automotive craftsmanship, photography and cinematic storytelling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
