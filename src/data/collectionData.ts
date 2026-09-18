@@ -51,7 +51,7 @@ export const vehicles: Vehicle[] = [
     year: 2007,
     category: 'Sedan',
     featured: true,
-    description: 'Highly detailed 1:18 scale diecast model of the 2007 Toyota Corolla GLi in metallic gunmetal grey. Features opening front doors, rear doors, and trunk, along with realistic alloy wheels and interior details.',
+    description: 'Highly detailed 1:18 scale diecast model of the 2007 Toyota Corolla GLI in metallic gunmetal grey. Features opening front doors, rear doors, and trunk, along with realistic alloy wheels and interior details.',
     coverImage: '/Scale-Studio/images/corollaold.jpg',
     images: [
       '/Scale-Studio/images/corollaold.jpg',
