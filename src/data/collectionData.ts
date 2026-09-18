@@ -130,9 +130,9 @@ export const vehicles: Vehicle[] = [
     featured: true,
     description: "Highly detailed 1:18 scale diecast replica of the Suzuki Liana facelift sedan. Features opening doors, bonnet, boot, functional steering, detailed engine bay, and realistic interior trim.",
     story: "Launched by Suzuki as the successor to the Baleno/Estepo, the Liana (an acronym for 'Life In A New Age') gained international fame as Top Gear's original 'Reasonably Priced Car', driven by numerous celebrities around the Dunsfold Aerodrome track.",
-    coverImage: '/images/liana.jpg',
+    coverImage: 'images/liana.jpg',
     images: [
-      '/images/liana.jpg',
+      'images/liana.jpg',
     ],
     spin360: {
       title: '360° Studio Turntable Study',
