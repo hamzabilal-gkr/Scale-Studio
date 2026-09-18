@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { PhotoItem } from '../types';
 import { X, ChevronLeft, ChevronRight, Camera } from 'lucide-react';
+import { getAssetUrl } from '../utils';
 
 interface PhotoLightboxProps {
   photos: PhotoItem[];
@@ -85,7 +86,7 @@ export const PhotoLightbox: React.FC<PhotoLightboxProps> = ({
         onClick={(e) => e.stopPropagation()}
       >
         <img
-          src={currentPhoto.image}
+          src={getAssetUrl(currentPhoto.image)}
           alt={currentPhoto.title}
           className="max-h-[75vh] max-w-full rounded object-contain shadow-2xl transition-all"
         />

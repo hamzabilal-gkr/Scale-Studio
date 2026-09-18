@@ -52,9 +52,9 @@ export const vehicles: Vehicle[] = [
     category: 'Sedan',
     featured: true,
     description: 'Highly detailed 1:18 scale diecast model of the 2007 Toyota Corolla GLi in metallic gunmetal grey. Features opening front doors, rear doors, and trunk, along with realistic alloy wheels and interior details.',
-    coverImage: '/images/corollaold.jpg',
+    coverImage: '/Scale-Studio/images/corollaold.jpg',
     images: [
-      '/images/corollaold.jpg',
+      '/Scale-Studio/images/corollaold.jpg',
     ],
     spin360: {
       title: '360° Studio Turntable Study',
@@ -65,8 +65,8 @@ export const vehicles: Vehicle[] = [
       {
         id: 'vid-supra-01',
         title: 'Toyota Corolla GLi 2007 Reel',
-        videoUrl: '/images/reels/corolla-gli-2007.mp4',
-        thumbnail: '/images/thumbnails/corolla-2007.jpg',
+        videoUrl: '/Scale-Studio/images/reels/corolla-gli-2007.mp4',
+        thumbnail: '/Scale-Studio/images/thumbnails/corolla-2007.jpg',
         duration: '00:10',
       }
     ],
@@ -91,9 +91,9 @@ export const vehicles: Vehicle[] = [
     featured: true,
     description: 'Highly detailed 1:18 scale replica of the 8th generation Honda Civic sedan (popularly known as "Civic Reborn" in South Asia). Features opening doors, hood, trunk, operable sunroof shade, functional steering, and detailed interior trim',
     story: 'Introduced in 2005 for the 2006 model year, the 8th generation Honda Civic revolutionized compact sedan styling with its Futuristic Mono-Form exterior design and revolutionary two-tier digital dashboard layout.',
-    coverImage: '/images/civicreborn.jpg',
+    coverImage: '/Scale-Studio/images/civicreborn.jpg',
     images: [
-      '/images/civicreborn.jpg',
+      '/Scale-Studio/images/civicreborn.jpg',
     ],
     spin360: {
       title: '360° Studio Turntable Study',
@@ -104,8 +104,8 @@ export const vehicles: Vehicle[] = [
       {
         id: 'vid-porsche-01',
         title: 'Honda Civic Sedan Reborn Reel',
-        videoUrl: '/images/reels/civic-reborn.mp4',
-        thumbnail: '/images/thumbnails/civic-reborn.jpg',
+        videoUrl: '/Scale-Studio/images/reels/civic-reborn.mp4',
+        thumbnail: '/Scale-Studio/images/thumbnails/civic-reborn.jpg',
         duration: '00:10'
       }
     ],
@@ -130,9 +130,9 @@ export const vehicles: Vehicle[] = [
     featured: true,
     description: "Highly detailed 1:18 scale diecast replica of the Suzuki Liana facelift sedan. Features opening doors, bonnet, boot, functional steering, detailed engine bay, and realistic interior trim.",
     story: "Launched by Suzuki as the successor to the Baleno/Estepo, the Liana (an acronym for 'Life In A New Age') gained international fame as Top Gear's original 'Reasonably Priced Car', driven by numerous celebrities around the Dunsfold Aerodrome track.",
-    coverImage: 'images/liana.jpg',
+    coverImage: '/Scale-Studio/images/liana.jpg',
     images: [
-      'images/liana.jpg',
+      '/Scale-Studio/images/liana.jpg',
     ],
     spin360: {
       title: '360° Studio Turntable Study',
@@ -143,8 +143,8 @@ export const vehicles: Vehicle[] = [
       {
         id: 'vid-skyline-01',
         title: 'Suzuki Liana Sedan Reel',
-        videoUrl: '/images/reels/suzuki-liana.mp4',
-        thumbnail: '/images/thumbnails/suzuki-liana.jpg',
+        videoUrl: '/Scale-Studio/images/reels/suzuki-liana.mp4',
+        thumbnail: '/Scale-Studio/images/thumbnails/suzuki-liana.jpg',
         duration: '00:10'
       }
     ],
@@ -169,9 +169,9 @@ export const vehicles: Vehicle[] = [
     featured: true,
     description: "Precision 1:18 scale diecast replica of the Mercedes-Benz E 200 (W213). Features opening passenger doors, hood, boot, detailed interior trim, working steering, and authentic Mercedes-Benz Exclusive Line front grille architecture.",
     story: "Unveiled at the 2016 North American International Auto Show, the W213 generation Mercedes-Benz E-Class marked a huge leap forward in automotive technology, introducing advanced semi-autonomous driving capabilities, aerodynamic body sculpting, and the iconic dual widescreen cockpit display.",
-    coverImage: '/images/mercedeseclass.jpg',
+    coverImage: '/Scale-Studio/images/mercedeseclass.jpg',
     images: [
-      '/images/mercedeseclass.jpg',
+      '/Scale-Studio/images/mercedeseclass.jpg',
     ],
     specs: {
       color: "Obsidian Black Metallic",
@@ -194,9 +194,9 @@ export const vehicles: Vehicle[] = [
     featured: true,
     description: "Highly detailed 1:18 scale diecast replica of the 11th generation facelift Toyota Corolla Altis Grande sedan. Features opening doors, hood, boot lid, operable sunroof shade, functional steering, and detailed interior appointments.",
     story: "The facelifted 11th generation Corolla E170 redefined Toyota's flagship compact sedan with sharper LED headlamp styling, upgraded infotainment, and refined CVT performance, cementing its position as one of the most iconic daily drivers globally.",
-    coverImage: '/images/corollanew.jpg',
+    coverImage: '/Scale-Studio/images/corollanew.jpg',
     images: [
-      '/images/corollanew.jpg'
+      '/Scale-Studio/images/corollanew.jpg'
     ],
     specs: {
       color: "Super White",
@@ -219,9 +219,9 @@ export const vehicles: Vehicle[] = [
     featured: true,
     description: 'Detailed 1:40 scale diecast model of the Mercedes-AMG G 63 in metallic crimson red. Features opening front doors, pull-back action, Panamericana front grille, and signature twin side-exit exhausts.',
     story: 'The legendary G-Wagon combines military-grade off-road heritage with handcrafted AMG performance, recognized worldwide for its unmistakable boxy silhouette and thunderous twin-turbo V8.',
-    coverImage: '/images/mercedesgclass.jpg',
+    coverImage: '/Scale-Studio/images/mercedesgclass.jpg',
     images: [
-      '/images/mercedesgclass.jpg',
+      '/Scale-Studio/images/mercedesgclass.jpg',
     ],
     spin360: {
       title: '360° Studio Turntable Study',
@@ -232,8 +232,8 @@ export const vehicles: Vehicle[] = [
       {
         id: 'Mercedes-AMG-G-63-(W463)-showcase',
         title: 'Mercedes-AMG G 63 1:40 Showcase Reel',
-        videoUrl: '/images/reels/Mercedes G63.mp4',
-        thumbnail: '/images/thumbnails/Mercedes G Class.jfif',
+        videoUrl: '/Scale-Studio/images/reels/Mercedes G63.mp4',
+        thumbnail: '/Scale-Studio/images/thumbnails/Mercedes G Class.jfif',
         duration: '00:10',
       }
     ],
@@ -258,9 +258,9 @@ export const vehicles: Vehicle[] = [
     featured: true,
     description: '1:38 scale diecast model of the BMW X6 xDrive50i in deep sapphire black. Celebrated as the pioneer of the Sports Activity Coupé (SAC) segment, featuring opening doors, sculpted fastback roofline, and aggressive kidney grille architecture.',
     story: 'First revealed at the 2008 North American International Auto Show, the E71 BMW X6 pioneered the coupe-SUV genre, blending high ground clearance and all-wheel-drive grip with dramatic sweeping coupe rooflines.',
-    coverImage: '/images/bmw.jpg',
+    coverImage: '/Scale-Studio/images/bmw.jpg',
     images: [
-      '/images/bmw.jpg',
+      '/Scale-Studio/images/bmw.jpg',
     ],
     specs: {
       color: 'Black Sapphire Metallic',
@@ -283,13 +283,13 @@ export const vehicles: Vehicle[] = [
     featured: true,
     description: '1:32 scale diecast model of the legendary 1965 Shelby Cobra 427 S/C finished in classic Wimbledon White with dual Le Mans blue racing stripes, side-pipe exhausts, and classic chrome bumperettes.',
     story: 'Carroll Shelby’s masterwork dropped an enormous Ford 427 FE big-block V8 into a lightweight British AC roadster chassis, creating one of the most savage and revered American sports cars in history.',
-    coverImage: '/images/ford.jpg',
+    coverImage: '/Scale-Studio/images/ford.jpg',
     images: [
-      '/images/ford.jpg',
+      '/Scale-Studio/images/ford.jpg',
     ],
     spin360: {
       title: '360° Studio Turntable Study',
-      frames: generate360Frames('/images/360/shelbycobra/', 12, '.jpg'),
+      frames: generate360Frames('/Scale-Studio/images/360/shelbycobra/', 12, '.jpg'),
       autoSpinSpeedMs: 300,
     },
     specs: {
@@ -313,9 +313,9 @@ export const vehicles: Vehicle[] = [
     featured: true,
     description: '1:34 scale diecast replica of the Porsche Cayman S in Arctic Silver Metallic. Features opening side doors, distinctive mid-engine fastback profile, sculpted rear haunches, and center-mounted dual exhaust.',
     story: 'Named after the agile caiman reptile, the Cayman S derived from the Boxster platform but added a rigid hardtop coupe roof, delivering extraordinary mid-engine balance and legendary cornering dynamics.',
-    coverImage: '/images/porcha.jpg',
+    coverImage: '/Scale-Studio/images/porcha.jpg',
     images: [
-      '/images/porcha.jpg',
+      '/Scale-Studio/images/porcha.jpg',
     ],
     specs: {
       color: 'Arctic Silver Metallic',
@@ -338,13 +338,13 @@ export const vehicles: Vehicle[] = [
     featured: true,
     description: '1:40 scale diecast model of the Toyota Land Cruiser Prado (J150 Facelift) in Pearl White with commemorative side-body decal striping. Features opening passenger doors, roof rails, vertical chrome grille, and tailgate spare tire assembly.',
     story: 'Built on a rugged body-on-frame platform, the Land Cruiser Prado is acclaimed worldwide for enduring extreme terrain across deserts and mountain passes while delivering executive luxury.',
-    coverImage: '/images/prado.jpg',
+    coverImage: '/Scale-Studio/images/prado.jpg',
     images: [
-      '/images/prado.jpg',
+      '/Scale-Studio/images/prado.jpg',
     ],
     spin360: {
     title: '360° Studio Turntable Study',
-    frames: generate360Frames('/images/360/Toyota-Land-Cruser/', 24, '.jpg'),
+    frames: generate360Frames('/Scale-Studio/images/360/Toyota-Land-Cruser/', 24, '.jpg'),
     autoSpinSpeedMs: 90,
     },
     specs: {
@@ -371,8 +371,8 @@ export const videos: VideoItem[] = [
     id: 'supra-mk4-cinematic-reel',
     title: 'Toyota Corolla GLi 2007 Reel',
     vehicle: 'Toyota Corolla GLi 2007',
-    thumbnail: '/images/thumbnails/corolla-2007.jpg',
-    videoUrl: '/images/reels/corolla-gli-2007.mp4',
+    thumbnail: '/Scale-Studio/images/thumbnails/corolla-2007.jpg',
+    videoUrl: '/Scale-Studio/images/reels/corolla-gli-2007.mp4',
     category: 'Cinematic AI',
     duration: '00:10',
     description: 'A cinematic macro study exploring the proportions and aerodynamic lines of the Paudi 1:18 Toyota Corolla GLi 2007.',
@@ -382,8 +382,8 @@ export const videos: VideoItem[] = [
     id: 'porsche-993-gt2-track-glory',
     title: 'Honda Civic FD "Reborn" Reel',
     vehicle: 'Honda Civic Sedan (FD Generation / "Reborn")',
-    thumbnail: '/images/thumbnails/civic-reborn.jpg',
-    videoUrl: '/images/reels/civic-reborn.mp4',
+    thumbnail: '/Scale-Studio/images/thumbnails/civic-reborn.jpg',
+    videoUrl: '/Scale-Studio/images/reels/civic-reborn.mp4',
     category: 'Cinematic AI',
     duration: '00:10',
     description: 'Dynamic probe-lens camera sweeps capturing the aerodynamic curves, sunroof detail, and pristine two-tier interior of the 1:18 Civic Reborn.',
@@ -393,8 +393,8 @@ export const videos: VideoItem[] = [
     id: 'suzuki-liana-reel-showcase',
     title: 'Suzuki Liana Sedan 1:18 Showcase Reel',
     vehicle: 'Suzuki Liana Sedan',
-    thumbnail: '/images/thumbnails/suzuki-liana.jpg',
-    videoUrl: '/images/reels/suzuki-liana.mp4',
+    thumbnail: '/Scale-Studio/images/thumbnails/suzuki-liana.jpg',
+    videoUrl: '/Scale-Studio/images/reels/suzuki-liana.mp4',
     category: 'Studio Showcase',
     duration: '00:10',
     description: 'Cinematic precision macro presentation highlighting the opening doors, detailed engine bay, and dark metallic finish of the 1:18 Suzuki Liana.',
@@ -404,8 +404,8 @@ export const videos: VideoItem[] = [
     id: 'Mercedes-AMG-G-63-(W463)-showcase',
     title: 'Mercedes-AMG G 63 (W463) 1:40 Showcase Reel',
     vehicle: 'Mercedes-AMG G 63 (W463)',
-    thumbnail: '/images/thumbnails/Mercedes G Class.jfif',
-    videoUrl: '/images/reels/Mercedes G63.mp4',
+    thumbnail: '/Scale-Studio/images/thumbnails/Mercedes G Class.jfif',
+    videoUrl: '/Scale-Studio/images/reels/Mercedes G63.mp4',
     category: 'Studio Showcase',
     duration: '00:10',
     description: 'Cinematic precision macro presentation highlighting the body, detailed engine bay, and dark metallic finish of the 1:40 Mercedes-AMG G 63 (W463).',

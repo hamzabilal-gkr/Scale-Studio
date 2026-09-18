@@ -28,9 +28,12 @@ export function getAssetUrl(path: string | undefined | null): string {
   // Clean double slashes
   clean = clean.replace(/\/+/g, '/');
 
-  // Handle Vite base path if deployed in a subfolder
+  // Avoid duplicate /Scale-Studio/ prefix if already present
+  clean = clean.replace(/^\/Scale-Studio\/Scale-Studio\//, '/Scale-Studio/');
+
+  // Handle Vite base path if deployed in a subfolder or fallback to /Scale-Studio/
   const meta = import.meta as { env?: { BASE_URL?: string } };
-  const base = (meta.env?.BASE_URL || '/').replace(/\/$/, '');
+  const base = (meta.env?.BASE_URL || '/Scale-Studio/').replace(/\/$/, '');
   const fullPath = base && !clean.startsWith(base) ? `${base}${clean}` : clean;
 
   // Encode spaces and special characters safely for URLs without double-encoding
