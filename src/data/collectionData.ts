@@ -249,8 +249,8 @@ export const vehicles: Vehicle[] = [
     ],
     spin360: {
       title: '360° Studio Turntable Study',
-      frames: [],
-      autoSpinSpeedMs: 90,
+      frames: generate360Frames('/Scale-Studio/images/360/bmwX6/', 12, '.jpg'),
+      autoSpinSpeedMs: 300,
     },
     specs: {
       color: 'Black Sapphire Metallic',
