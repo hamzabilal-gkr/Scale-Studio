@@ -43,8 +43,8 @@ export const HomePage: React.FC<HomePageProps> = ({
           {/* Subtle Brand Tagline Eyebrow */}
           <div className="inline-flex max-w-[95%] items-center justify-center space-x-2 rounded-full border border-[#c5a059]/30 bg-[#161822]/85 px-3 py-1 sm:px-4 sm:py-1.5 backdrop-blur-md">
             <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#c5a059]" />
-            <span className="text-[9px] sm:text-[11px] font-semibold uppercase tracking-[0.08em] sm:tracking-[0.25em] text-[#c5a059] text-center">
-              PROF.HAMZABILAL
+            <span className="font-syne text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.2em] sm:tracking-[0.25em] text-[#c5a059] text-center">
+              THE MINIATURE SHOWROOM
             </span>
           </div>
 

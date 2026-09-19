@@ -27,6 +27,10 @@
     font-family: 'Cinzel', Georgia, serif;
     letter-spacing: 0.04em;
   }
+
+  .font-syne {
+    font-family: 'Syne', sans-serif;
+  }
 }
 
 /* Refined custom scrollbar */
