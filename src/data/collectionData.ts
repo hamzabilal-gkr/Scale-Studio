@@ -56,11 +56,6 @@ export const vehicles: Vehicle[] = [
     images: [
       '/Scale-Studio/images/corollaold.jpg',
     ],
-    spin360: {
-      title: '360° Studio Turntable Study',
-      frames: [],
-      autoSpinSpeedMs: 90,
-    },
     videos: [
       {
         id: 'vid-supra-01',
@@ -95,11 +90,6 @@ export const vehicles: Vehicle[] = [
     images: [
       '/Scale-Studio/images/civicreborn.jpg',
     ],
-    spin360: {
-      title: '360° Studio Turntable Study',
-      frames: [],
-      autoSpinSpeedMs: 90,
-    },
     videos: [
       {
         id: 'vid-porsche-01',
@@ -134,11 +124,6 @@ export const vehicles: Vehicle[] = [
     images: [
       '/Scale-Studio/images/liana.jpg',
     ],
-    spin360: {
-      title: '360° Studio Turntable Study',
-      frames: [],
-      autoSpinSpeedMs: 90,
-    },
     videos: [
       {
         id: 'vid-skyline-01',
@@ -262,6 +247,11 @@ export const vehicles: Vehicle[] = [
     images: [
       '/Scale-Studio/images/bmw.jpg',
     ],
+    spin360: {
+      title: '360° Studio Turntable Study',
+      frames: [],
+      autoSpinSpeedMs: 90,
+    },
     specs: {
       color: 'Black Sapphire Metallic',
       bodyMaterial: 'Diecast Metal Body with ABS trim',
@@ -317,6 +307,11 @@ export const vehicles: Vehicle[] = [
     images: [
       '/Scale-Studio/images/porcha.jpg',
     ],
+    spin360: {
+      title: '360° Studio Turntable Study',
+      frames: [],
+      autoSpinSpeedMs: 90,
+    },
     specs: {
       color: 'Arctic Silver Metallic',
       bodyMaterial: 'Diecast Metal with ABS plastic components',

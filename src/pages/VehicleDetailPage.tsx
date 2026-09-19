@@ -36,6 +36,8 @@ export const VehicleDetailPage: React.FC<VehicleDetailPageProps> = ({
   const [copiedLink, setCopiedLink] = useState<boolean>(false);
   // View mode switcher: Gallery Photos vs 360 Interactive Turntable
   const [viewMode, setViewMode] = useState<'PHOTO' | '360'>('PHOTO');
+  const is360Available = Boolean(vehicle.spin360);
+  const effectiveViewMode = is360Available ? viewMode : 'PHOTO';
 
   // Convert vehicle.images into PhotoItems for lightbox compatibility
   const vehiclePhotoItems: PhotoItem[] = (vehicle.images || [vehicle.coverImage]).map(
@@ -72,18 +74,20 @@ export const VehicleDetailPage: React.FC<VehicleDetailPageProps> = ({
 
         <div className="flex flex-wrap items-center gap-2 sm:gap-3">
           {/* 360° View Quick Action Button */}
-          <button
-            id="top-360-btn"
-            onClick={() => setViewMode(viewMode === '360' ? 'PHOTO' : '360')}
-            className={`flex items-center space-x-1.5 rounded border px-2.5 py-1.5 sm:px-3 text-xs font-semibold transition ${
-              viewMode === '360'
-                ? 'border-[#c5a059] bg-[#c5a059] text-black shadow-md shadow-[#c5a059]/20'
-                : 'border-[#c5a059]/50 bg-[#151722] text-[#c5a059] hover:bg-[#c5a059]/15'
-            }`}
-          >
-            <RotateCw className="h-3.5 w-3.5" />
-            <span>{viewMode === '360' ? 'Photos' : '360° View'}</span>
-          </button>
+          {is360Available && (
+            <button
+              id="top-360-btn"
+              onClick={() => setViewMode(effectiveViewMode === '360' ? 'PHOTO' : '360')}
+              className={`flex items-center space-x-1.5 rounded border px-2.5 py-1.5 sm:px-3 text-xs font-semibold transition ${
+                effectiveViewMode === '360'
+                  ? 'border-[#c5a059] bg-[#c5a059] text-black shadow-md shadow-[#c5a059]/20'
+                  : 'border-[#c5a059]/50 bg-[#151722] text-[#c5a059] hover:bg-[#c5a059]/15'
+              }`}
+            >
+              <RotateCw className="h-3.5 w-3.5" />
+              <span>{effectiveViewMode === '360' ? 'Photos' : '360° View'}</span>
+            </button>
+          )}
 
           <button
             onClick={handleShare}
@@ -115,7 +119,7 @@ export const VehicleDetailPage: React.FC<VehicleDetailPageProps> = ({
                 id="view-mode-photo-tab"
                 onClick={() => setViewMode('PHOTO')}
                 className={`flex items-center space-x-1.5 sm:space-x-2 rounded-md px-2.5 sm:px-3.5 py-1.5 text-xs font-semibold transition ${
-                  viewMode === 'PHOTO'
+                  effectiveViewMode === 'PHOTO'
                     ? 'bg-[#1b1e2a] text-white shadow-sm'
                     : 'text-[#8c91a3] hover:text-white'
                 }`}
@@ -124,23 +128,25 @@ export const VehicleDetailPage: React.FC<VehicleDetailPageProps> = ({
                 <span>Gallery Photos</span>
               </button>
 
-              <button
-                id="view-mode-360-tab"
-                onClick={() => setViewMode('360')}
-                className={`flex items-center space-x-1.5 sm:space-x-2 rounded-md px-2.5 sm:px-3.5 py-1.5 text-xs font-semibold transition ${
-                  viewMode === '360'
-                    ? 'bg-[#c5a059] text-black shadow-md font-bold'
-                    : 'text-[#c5a059] hover:text-white'
-                }`}
-              >
-                <RotateCw className="h-3.5 w-3.5" />
-                <span>360° Studio</span>
-                <span className="flex h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              </button>
+              {is360Available && (
+                <button
+                  id="view-mode-360-tab"
+                  onClick={() => setViewMode('360')}
+                  className={`flex items-center space-x-1.5 sm:space-x-2 rounded-md px-2.5 sm:px-3.5 py-1.5 text-xs font-semibold transition ${
+                    effectiveViewMode === '360'
+                      ? 'bg-[#c5a059] text-black shadow-md font-bold'
+                      : 'text-[#c5a059] hover:text-white'
+                  }`}
+                >
+                  <RotateCw className="h-3.5 w-3.5" />
+                  <span>360° Studio</span>
+                  <span className="flex h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                </button>
+              )}
             </div>
 
             <div className="flex items-center space-x-2 text-[11px]">
-              {viewMode === '360' ? (
+              {effectiveViewMode === '360' ? (
                 <span className="text-[#c5a059] font-mono font-medium">
                   360° Studio Turntable
                 </span>
@@ -152,7 +158,7 @@ export const VehicleDetailPage: React.FC<VehicleDetailPageProps> = ({
             </div>
           </div>
 
-          {viewMode === '360' ? (
+          {effectiveViewMode === '360' ? (
             /* 360° Interactive Turntable Viewer */
             <div className="space-y-3">
               <Vehicle360Viewer
